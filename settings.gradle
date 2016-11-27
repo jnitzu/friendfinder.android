@@ -1,0 +1,9 @@
+include ':app'
+
+// Include connection protocol module
+includeFlat 'friendfinder.connectionprotocol'
+
+/* Another way to include it
+include ':friendfinder.connectionprotocol'
+project(':friendfinder.connectionprotocol').projectDir = new File(settingsDir, '../friendfinder.connectionprotocol')
+*/

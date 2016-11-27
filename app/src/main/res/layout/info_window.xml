@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#b0bec5"
+        android:paddingBottom="15dp"
+        android:clipToPadding="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:elevation="10dp" >
+
+            <TextView
+                android:id="@+id/info_window_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFF"
+                android:textAllCaps="true"
+                android:gravity="start|center"
+                android:text="Joni"
+                android:paddingEnd="5dp"
+                android:textAppearance="?android:textAppearanceLarge"/>
+            <TextView
+                android:id="@+id/info_window_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFF"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:text="Lehtinen"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info_window_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Tähkäkuja 5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="Accuracy: "/>
+            <TextView
+                android:id="@+id/info_window_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="25m"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/info_window_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="25.12.2002 15:55:23"/>
+    </LinearLayout>
+</LinearLayout>

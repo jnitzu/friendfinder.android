@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingStart="15dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="8dp"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingEnd="15dp"
+        android:elevation="2dp"
+        android:background="#7ba294" >
+
+        <TextView
+            android:id="@+id/list_item_circle_name"
+            android:layout_weight="0.75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:textAllCaps="true"
+            android:gravity="start|center"
+            android:padding="15dp"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/colorAccept">
+
+            <ImageView
+                android:id="@+id/list_item_circle_join_confirm"
+                android:src="@drawable/confirm"
+                android:contentDescription="@string/cd_circle_confirm_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#FFF"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/colorRemove">
+
+            <ImageView
+                android:id="@+id/list_item_circle_join_decline"
+                android:src="@drawable/decline"
+                android:contentDescription="@string/cd_circle_decline_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#FFF"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

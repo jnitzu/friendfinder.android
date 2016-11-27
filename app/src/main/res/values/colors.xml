@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796b</color>
+    <color name="colorAccent">#ff5252</color>
+    <color name="colorAccept">#81c784</color>
+    <color name="colorRemove">#e06969</color>
+    <color name="colorFAB">#e06969</color>
+    <color name="navigationBarColor">#009688</color>
+</resources>

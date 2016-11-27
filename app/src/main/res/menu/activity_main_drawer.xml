@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/nav_group_current">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/map"
+            android:title="@string/drawer_map" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/settings"
+            android:title="@string/drawer_manage" />
+    </group>
+    <group android:id="@+id/nav_group_circle">
+        <item android:title="@string/drawer_circle">
+            <menu>
+                <item
+                    android:id="@+id/nav_circle_create"
+                    android:icon="@drawable/createcircle"
+                    android:title="@string/drawer_circle_create" />
+                <item
+                    android:id="@+id/nav_circle_choose"
+                    android:icon="@drawable/circles"
+                    android:title="@string/drawer_circle_choose" />
+                <item
+                    android:id="@+id/nav_circle_join_requests"
+                    android:icon="@drawable/add"
+                    android:title="@string/drawer_circle_join_requests" />
+            </menu>
+        </item>
+    </group>
+    <group android:id="@+id/nav_group_global">
+        <item
+            android:id="@+id/nav_db_debug"
+            android:title="DB DEBUG"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/drawer_logout" />
+    </group>
+</menu>
